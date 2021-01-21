@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import model.Blog;
 import model.User;
 import service.CRUDOperations;
-import service.ExcelFileStorage;
+//import service.ExcelFileStorage;
 import utility.CheckBlogPost;
 
 
@@ -59,6 +59,7 @@ public class BlogController extends HttpServlet {
 		CheckBlogPost checkBlog=new CheckBlogPost();
 		boolean check=checkBlog.checkBlog(blog);
 		
+				
 		CRUDOperations crud=new CRUDOperations();
 		List<Blog> listblog = crud.createBlog(blog);
 

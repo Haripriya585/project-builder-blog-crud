@@ -7,7 +7,14 @@ import java.util.List;
 import model.Blog;
 
 public class CRUDOperations {
-	static List<Blog> list=new ArrayList<Blog>(); // Store the blog in the list
+static List<Blog> list=new ArrayList<Blog>(); 
+	
+	public List<Blog> addBlog(Blog blog)
+	{
+		list.add(blog);
+		System.out.println(list);
+		return list;
+	}
 	
 	public List<Blog> createBlog(Blog blog) throws IOException {
 		list.add(blog);
